@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/github_user"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Github User"
+        android:textColor="#FFC107"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:lineHeight="15sp"
+        android:background="@color/colorPrimaryDark"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="33dp"
+        android:id="@+id/rv_github"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/user_item"
+        />
+
+</RelativeLayout>
